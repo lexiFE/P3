@@ -1,0 +1,62 @@
+*,*::after,*::before{    /**is selecting everything. This allows us to apply the border-box model to all elements on the page.*/
+	box-sizing: border-box;
+}
+
+/*
+	setting up our 'box'  its elements to be wrapped into the flexbox model.
+*/
+.box {
+	display: flex;
+	flex-direction: column;
+
+/*	flex-wrap: wrap;*/
+	flex:1 1 15em; /*grow shrink basis parameter*/
+
+	/*
+		To get our flexbox to change how elements are spanned across the remaining space, we can use the 'justify-content' property. 
+		In this case, we are specifying that we want the extra space to be balanced around our elements.
+	*/
+	-webkit-justify-content: space-around;
+	-ms-justify-content: space-around;
+	justify-content: space-around;
+
+}
+
+.box-item-nav{
+	flex: 1 1 auto;
+	flex-direction: row;
+}
+.box-item-inEle {
+	/*
+		flex-basis value that is a pixel value to reflect the 'minimum' width of the "interactive element" before the flexbox reflows and stacks the elements inside. 
+		Additionally, the use of a flex-grow value of 3 ensures that our sectuin is 'heavier' (will take up more space) when available.
+	*/
+	flex: 3 1 400px;
+}
+.col-50{
+	flex: 50%;
+	padding: 0 16px;
+
+}
+
+.box1{
+	flex: 3 1 400px;
+	
+}
+.box2{
+	flex: 1 1 18em;
+	padding:0  1rem;
+
+}
+
+
+@media (min-width: 60em) {
+	
+/*		The flexbox 'order' property lets us re-order items	as they are flowed. Smaller values position items closer to the top, or to the left, higher values place them near the end, or to the right. Depending on the orientation of the flexbox flow.
+*/	
+	.box2 {
+
+		order: 2;
+	}
+
+}

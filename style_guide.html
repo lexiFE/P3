@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- responsive (viewport = the browser window. it ensures you open up ur webpage
+      on a mobile device that it is scaled appropriately
+       width=device-width - sets the wid th of the site to the width of the device
+       initial-scale=1.0 - sets our initial zoom lvl-->
+
+    <title>P03 - Style Guide Template</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+<!-- compactt for output, which is tight the css -->
+    <link rel="stylesheet" href="css/flexbox.css">
+
+
+  </head>
+
+  <body>
+
+    <header>
+      <h1>P03 - Portfolio Style Guide Template</h1></header>
+
+      <p>A template you can use to start building out your own style guides with.</p>
+
+      <nav class="nav-main box">
+        <a class="nav-main-item box-item-nav" href="#interactive_elements">About</a>
+        <a class="nav-main-item textEle box-item-nav" href="#text_elements">Text Elements</a>
+        <a class="nav-main-item comEle box-item-nav" href="#combined_elements">Combined Elements</a>
+        <a class="nav-main-item proListing box-item-nav" href="#product_listing">Work</a>
+        <a class="nav-main-item cita box-item-nav" href="#citations">Citations</a>
+      </nav>
+
+
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+      <h2>About and bio</h2>
+
+      <div class="box">
+        <div class="box-item-inEle">
+
+
+        <section class="element">
+          <h3 > find Lexi in <a id="inText" href="https://www.facebook.com/lexiqf">
+          here</a></h3>
+        </section>
+        </div>  <!-- close box item-inEle -->
+
+      <!-- Default Button styling section -->
+      <section class="element">
+
+        <h3>Navigation Link</h3>
+          <nav class="nav-main box">
+            <a class="nav-main-item box-item-nav" href="#interactive_elements">About</a>
+            <a class="nav-main-item textEle box-item-nav" href="#text_elements">Text Elements</a>
+            <a class="nav-main-item comEle box-item-nav" href="#combined_elements">Combined Elements</a>
+            <a class="nav-main-item proListing box-item-nav" href="product_listing.html">Work</a>
+            <a class="nav-main-item cita box-item-nav" href="#citations">Citations</a>
+          </nav>
+
+        <h4>CSS selector:</h4>
+        <p>.button-nav</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <a class="button-nav" href="#">Default Button</a>
+
+      </section>
+
+
+      <section class="element">
+        <h3>Submit/Reset Buttons</h3>
+        <a class="button-nav" href="#">Submit</a>
+        <a class="button-nav" href="#">Reset</a>
+      </section>
+
+
+      <section class="element">
+        <h3>Text Input Field with Label</h3>
+        <form>
+           <input name="q" placeholder="Search Me">
+           <input type="submit" value="Search">
+      </form>
+
+      <form action="/action_page.php" target="_blank" class="typeName">
+        <fieldset>
+          <legend>Information</legend>
+           First name:<br>
+            <input type="text" name="firstname" value="Good">
+            <br>
+           Last name:<br>
+            <input type="text" name="lastname" value="Day">
+            <br><br>
+            <input type="submit" value="Submit">
+          </fieldset>
+      </form>
+    </section>
+
+
+
+<!--       <fieldset>
+          <label>Username
+            <input type="text" name="username">
+          </label>
+        <label>Password
+            <input type="text" name="password">
+        </label>
+      </fieldset>
+ -->
+
+      <section class="element">
+        <h3>Radio Button with Label</h3>
+        <h4>Term of Use</h4>
+        <input type="radio" name="term" value="agree"> Agree<br>
+<input type="radio" name="term" value="decline"> Decline<br>
+
+      </section>
+
+
+      <section class="element">
+        <div class="box-item-image">
+        <h3>Image as a Link</h3>
+        <!-- <div class="imgContainer">
+          <a href="http://harnas.org/pages/Go-Wildlifes"> <img class="imageChange" src="img/volunteerFeed.jpg" ></a>
+            <div class="overlay">
+              <div class="text">Go to the web</div>
+            </div>
+        </div> -->
+          <div class="container">
+              <img src="img/spread1.jpg" alt="Project 1 SPREAD" class="image">
+              <div class="overlay">
+                    <div class="text">Check for more details</div>
+              </div>  <!-- close "overlay" -->
+          </div><!-- close container -->
+        </div><!-- close box-item-image -->
+
+          <div class="container">
+              <img src="img/render1.jpg" alt="Project 2 ANIMATION" class="image">
+              <div class="overlay">
+                    <div class="text">Check for more details</div>
+              </div>  <!-- close "overlay" -->
+          </div><!-- close container -->
+        </div><!-- close box-item-image -->
+        </div>
+
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements">
+      <h2>Text Elements</h2>
+
+
+      <section class="element">
+        <h3>Main Headings</h3>
+        <h4>Subpage tiltle</h4>
+        <h5>Section headings2</h5>
+        <h6>Bold content within body or form labels</h6>
+        <p>Body content /copy</p>
+
+      </section>
+
+      <section class="element">
+        <div class="container1">
+          <div class="box1">
+          <h3>Project 01 - Spread Design</h3>
+          <p>I was choosing the magazine layout design project to 
+          At the starting point, I carefully read the requirement of the project which is designated to capture a model composed in an architectural space, and together to unite while representing a theme that would be put on a 3-page spread as in a hypothetical magazine. Then with a primary idea in mind, I started a plan to visit the site and seek around the best scenes and camera angle to prepare the real shooting later on. The shooting procedure went well with given instruction to the model to integrate with the shooting scene elements. Therefore, in post-production; I could have plenty of photos for selection.
+          </p>
+
+          <p>By utilizing the digital softwares (Adobe Lightroom 2018, Illustrator 2018) to apply photo treatment on the images into black and white, and adjusted the exposure, sharpness, brightness and many of others, section by section to better optimize the balance of each photo to represent the most out of its theme. I was also inspired by the literal guideline readings and layout collection “Harper’s Bazaar” according to the famous art director Alexey Brodovitch. “Design is an iterative process” always remind me there are lots of diverse methods to play around the possibilities and arrange.</p>
+        </div>
+
+        <div class="box2">
+          <h3>Animation:</h3>
+          <p>Before the animation process began, the team and I would set up a few meetings to propose the settings, character and the plot for each scene, in our self-developed creative animation project. In order to construct a fluent and comprehensive story to the audience, we thought about the doability of shaping our own made characters and the feasibility of the animated functions to the team. Later on, each student is allowed to use the the second individual assignment whose requirement is to realistic, in their later group project’s use. I considered this as an opportunity to start the project ahead and it is beneficial not only to myself but also for the team as well. Therefore, I built the cafe scene in 3 dimensional from scratch.  
+          </p>
+        </div>
+      </div>
+
+      </section>
+
+      <section class="element">
+        <h3>Project-Magazine Spread Design</h3>
+        <ol>
+          <li><strong>Animal Classification</strong></li>
+          <li><strong>Domestication and tame</strong></li>
+          <li><strong>Number three</strong></li>
+
+        <p>Domestication (from Latin domesticus) is the process whereby a population of animals, through a process of selection, is changed at the genetic level, accentuating traits that benefit humans. It differs from taming in that a change in the phonotypical expression and genotype of the animal occurs, whereas taming is simply the process by which animals become accustomed to human presence. Therefore, a defining characteristic of domestication is artificial selection by humans.</p>
+
+      </ol>
+      </section>
+
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+      <h2>Combined Elements</h2>
+
+      <section class="element">
+        <h3>Main Navigation</h3>
+        <nav class="nav-main box">
+            <a class="nav-main-item box-item-nav" href="#interactive_elements">About</a>
+            <a class="nav-main-item textEle box-item-nav" href="#text_elements">Text Elements</a>
+            <a class="nav-main-item comEle box-item-nav" href="#combined_elements">Combined Elements</a>
+            <a class="nav-main-item proListing box-item-nav" href="product_listing.html">Work</a>
+            <a class="nav-main-item cita box-item-nav" href="#citations">Citations</a>
+        </nav>
+      </section>
+
+      <section class="element">
+        <h3 id="product_listing">Product/Service Listing</h3>
+        <span>
+          <a href="http://www.nightsbridge.co.za/bridge/book?bbid=15303" class="service-part">
+            <div class="service-img">
+              <img src="img/mowgli.jpg" alt="http://www.nightsbridge.co.za/bridge/book?bbid=15303" class="" width="400" height="400">
+
+             </div>  <!-- close for service-img -->
+            <div>
+              <p class="service-title">Harnas Wildlife Foundation</p>
+              <p class="service-branch">Mowgli</p>
+              <p class="service-price">N$ 1500.00</p>
+
+            </div>
+          </a>
+        </span>   <!-- part1 finished -->
+
+        <span>
+          <a href="http://www.nightsbridge.co.za/bridge/book?bbid=15303" class="service-part">
+            <div class="service-img">
+              <img src="img/sunrise.jpg" alt="http://www.nightsbridge.co.za/bridge/book?bbid=15303" class="" width="400" height="400">
+
+             </div>  <!-- close for service-img -->
+                       </a>
+            <div>
+              <p class="service-title">Harnas Wildlife Foundation</p>
+              <p class="service-branch">Sunrise</p>
+              <p class="service-price">N$ 1800.00</p>
+
+            </div>
+
+        </span>   <!-- part2 finished -->
+
+
+<!-- putting the correct format of the email address -->
+
+      </section>
+
+      <section class="element">
+        <h3>Application Information </h3>
+        <textarea class="typeInfo" name="comment">Add your information here</textarea>
+        <form>
+          <label>Email Address</label>
+          <input type="email" name="email-address" placeholder="name@domain.com" required>
+             <input type="submit" name="submit">
+
+        </form>
+
+      </section>
+
+      
+
+    
+    <!-- // COMBINED ELEMENTS SECTION -->
+
+    <section class="element">
+      <h3>Color Palette</h3>
+      <a class="selectColor" href="#" onclick="this.focus()">
+      <img id="imgColor" alt="image_not" src="img/color_palatte.png" />
+      </a>
+    </section>
+
+    <section id="citations">
+      <h2>Citations</h2>
+
+      <ul>
+        <li>Carter, Matthew  Designer. 1996. <strong>Verdana [Font]</strong>. Retrieved from <a href="https://www.cssfontstack.com/Verdana">https://www.cssfontstack.com/Verdana</a></li>
+
+        <li>Global accepted paymenent method icons. <strong>Payment Icons</strong>. Retrieved from <a href="https://www.google.ca/search?q=payment+method+icons+png&tbm=isch&source=lnt&tbs=isz:i&sa=X&ved=0ahUKEwiJ-4Oh94bgAhWmhVQKHXkoDkYQpwUIIQ&biw=1536&bih=683&dpr=2.5#imgrc=_">Icons-URL</a>.</li>
+
+         <li>W3schools. 1996. <strong>How to</strong>. Retrieved from <a href="https://www.w3schools.com/howto/howto_css_checkout_form.asp">Create a checkout form</a></li>
+      </ul>
+
+    </section>
+
+
+
+  </body>
+</html>
