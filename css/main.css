@@ -33,7 +33,7 @@ nav {
 
 a {
   text-decoration: none;
-  color: #d84f4a;
+  color: white;
 }
 
 h1 {
@@ -108,7 +108,7 @@ footer {
 }
 
 .tabs li a:hover {
-  color: white;
+  color: #d84f4a;
 }
 
 .brand img {
