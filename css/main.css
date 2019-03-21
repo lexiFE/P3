@@ -146,6 +146,10 @@ footer {
   width: 50%;
 }
 
+.containercontent p{
+  font-size: 0.85rem;
+}
+
 .contact-form {
   max-width: 400px;
   margin-left: auto;
