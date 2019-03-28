@@ -135,11 +135,13 @@ footer {
 .left {
   width: 50%;
   float: left;
+  padding-left: 10rem;
 }
 
 .right {
   width: 50%;
   float: right;
+  padding-right: 10rem;
 }
 
 .work-img {
@@ -147,7 +149,7 @@ footer {
 }
 
 .containercontent p{
-  font-size: 0.85rem;
+  font-size: 1.2rem;
 }
 
 .contact-form {

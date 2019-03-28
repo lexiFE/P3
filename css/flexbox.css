@@ -3,7 +3,7 @@
 }
 
 
-@media (min-width: 60em) {
+@media (max-width: 30em) {
 	
 /*		The flexbox 'order' property lets us re-order items	as they are flowed. Smaller values position items closer to the top, or to the left, higher values place them near the end, or to the right. Depending on the orientation of the flexbox flow.
 */	
@@ -15,11 +15,16 @@
 
  .containercontent{
  	padding-left: 40%;
- 	font-size: 1.8rem;
+ 	/*font-size: 1.8rem;*/
  }
 
  .containercontent p{
- 	font-size: 1.2rem;
+ 	font-size: 1.8rem;
  	width: 500px;
+ }
+
+ .tabs{
+ 	display: flex;
+ 	float: right;
  }
 }
