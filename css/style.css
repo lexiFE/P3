@@ -1,6 +1,5 @@
 /*
   STYLE GUIDE STYLING
-  Default styling for the style guide
 */
 
 /*
@@ -8,10 +7,9 @@
 */
 body {
   font-family: Verdana, Geneva, sans-serif; 
-/*  font-family: Cabin;*/
   padding: 2rem;
-
 }
+
 .nav-main-item {
   display: inline-block;
   color: black;
@@ -22,11 +20,6 @@ body {
   transition: background-color 0.5s ease-out;
 }
 
-.inEle, .textEle, .comEle, .proListing, .cita, .checkout{
-/*  border: 2px #EFEEEA solid;
-  background-color: #FBEECA;
-  padding: 0.8rem;*/
-}
 
 .element {
   padding-bottom: 2rem;
