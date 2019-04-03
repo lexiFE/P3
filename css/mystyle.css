@@ -6,11 +6,9 @@ body {
   padding: 2rem;
 }
 
-h1{
-	margin-top:0;
-}
 h2 {
   margin-top: 6rem;
+  text-decoration: overline dashed #f9ecf9;
 }
 
 h3 {
@@ -28,38 +26,16 @@ p {
   max-width: 800px;
   
 }
-.nav-main{
-	  list-style: none;
-	  margin: 0;
-/*	  background: linear-gradient(to left, #993399, #391326);*/
-	  background: linear-gradient(to left, #bfbfbf, #262626);
-	  
-	  display: -webkit-box;
-	  display: -moz-box;
-	  display: -ms-flexbox;
-	  display: -webkit-flex;
-	  display: flex;
-	  -webkit-flex-flow: row wrap;
-	  justify-content: center;;
-
-}
-
-.nav-main-item {
-  display:block;
-  color: white;   /*color for text */
-/*  background-color: #F0F0DF;   /*BDD3DE*/*/
-  font-size: 1.15rem;
-  padding: 1em;
-  transition: background-color 0.5s ease-out;
-  text-decoration: none;
-  padding-right: 2rem;
-
-}
 
 nav a:hover, nav a:focus {
   text-decoration:underline; ;
 }
 
+.indexfooter {
+	background-color: black;
+	color: white;
+	text-align: center;
+}
 @media all and (max-width: 750px) {    /*medium scree, center the menu item with even space*/
   .nav-main {
     justify-content: space-around;
@@ -127,10 +103,20 @@ section{
   transition: 0.3s;
 }
 
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
+.sidenav a:hover{
   color: #4d4d4d;
   text-decoration: line-through #f9ecf9;
+}
+
+.sidenav a:(.active) {
+  background-color: #4CAF50;
+  color: red;
+}
+
+/* Links on mouse-over */
+.sidenav a:hover:not(.active) {
+  background-color: #555;
+  color: black;
 }
 
 /* Position and style the close button (top right corner) */
