@@ -103,18 +103,18 @@ section{
   transition: 0.3s;
 }
 
-.sidenav a:hover{
+.menuItem,.sidenav a:hover{
   color: #4d4d4d;
   text-decoration: line-through #f9ecf9;
 }
 
-.sidenav a:active{
+.menuItem:active{
   background-color: #f9ecf6;
   color: red;
 }
 
 /* Links on mouse-over */
-.sidenav a:hover:not(.active) {
+.menuItem:hover:not(.active) {
   background-color: #bca0bccf;
   color: black;
 }
@@ -256,6 +256,15 @@ section{
 
 #inText:visited{
   color:rgb(255,255,255);
+}
+
+#contact h3{
+	display: inline-block;
+	padding-right: 2rem
+}
+
+#emailLexi{
+	text-decoration: underline;
 }
 
 /* Styling for the button */

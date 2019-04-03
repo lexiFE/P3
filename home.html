@@ -16,9 +16,9 @@
     	<div class="col-20">
 			<div id="mySidenav" class="sidenav">
 				  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-				  <a href="#about">About</a>
-				  <a href="#works">Services</a>
-				  <a href="#contact">Contact</a>
+				  <a href="#about" class="menuItem">About</a>
+				  <a href="#works" class="menuItem">Works</a>
+				  <a href="#contact" class="menuItem">Contact</a>
 				</div>
 
 				<!-- Use any element to open the sidenav -->
@@ -49,12 +49,6 @@
 					    <img src="img/spread3.jpg" style="width:100%">
 					    <div class="text">Last page</div>
 					  </div>
-			      
-			<!-- 		  <div class="myShow fade">
-					    <div class="numbertext">4 / 4</div>
-					    <img src="img/render1.jpg" style="width:100%">
-					    <div class="text">Last page</div>
-					  </div> -->
 
 					  <!-- Next and previous buttons -->
 					  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -83,6 +77,19 @@
 					  document.getElementById("mySidenav").style.width = "0";
 					  document.getElementById("main").style.marginLeft= "0";
 					}
+
+					// Add active class to the current button (highlight it)
+						var header = document.getElementById("mySidenav");
+						var btns = header.getElementsByClassName("active");
+						for (var i = 0; i < btns.length; i++) {
+						  btns[i].addEventListener("click", function() {
+						  var current = document.getElementsByClassName("active");
+						  if (current.length > 0) { 
+						    current[0].className = current[0].className.replace(" active", "");
+						  }
+						  this.className += " active";
+						  });
+						}
 					</script>
       
 
@@ -94,11 +101,12 @@
 				</nav> -->
 
 			    <!-------------------------- ABOUT LEXI// ------------------------------->
+
+
+			<div class="box">  <!-- a box model wrapped around with line -->
+			    <div class="box-item-inEle">
 			    <section id="about">
 			      <h2>About and bio</h2>
-
-			      <div class="box">  <!-- a box model wrapped around with line -->
-			        <div class="box-item-inEle">
 			        <section class="element">
 			          <h3 >Hello! I am Lexi Feng </h3>
 
@@ -108,7 +116,7 @@
 			        </section>
 			        </div>  <!-- close box item-inEle -->
 
-			    <!-- // DISPLAYING WORKS SECTION -->
+			    <!-- ---------------------- DISPLAYING WORKS SECTION ------------------->
 
 			    <section id="works">
 			      <h2>Works</h2>
@@ -185,9 +193,9 @@
 			      <h2>Contact</h2>
 
 			      <section class="element">
-			        <h3 id="product_listing">Contact Lexi</h3>
-			        <p>qian_feng@sfu.ca</p>
-			        <p>778-636-0928</p>
+			        
+			        <h3 href="qian_feng@sfu.ca" id="emailLexi">qian_feng@sfu.ca</h3>
+			        <h3>778-636-0928</h3>
 			      </section>
 
     
