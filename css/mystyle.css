@@ -6,7 +6,9 @@ body {
 .nav-main{
 	  list-style: none;
 	  margin: 0;
-	  background: linear-gradient(to left, #993399, black);
+	  background: linear-gradient(to left, #993399, #391326);
+	  background: linear-gradient(to left, #bfbfbf, #262626);
+	  
 	  display: -webkit-box;
 	  display: -moz-box;
 	  display: -ms-flexbox;
@@ -23,8 +25,12 @@ body {
   font-size: 1.15rem;
   padding: 1em;
   transition: background-color 0.5s ease-out;
+  text-decoration: none;
 }
 
+nav a:hover, nav a:focus {
+  text-decoration:underline; ;
+}
 
 .element {
   padding-bottom: 2rem;
@@ -53,9 +59,7 @@ p {
   
 }
 
-nav a:hover, nav a:focus {
-  text-decoration: none;
-}
+
 
 code {
   background-color: #EEE;
