@@ -108,14 +108,14 @@ section{
   text-decoration: line-through #f9ecf9;
 }
 
-.sidenav a:(.active) {
-  background-color: #4CAF50;
+.sidenav a:active{
+  background-color: #f9ecf6;
   color: red;
 }
 
 /* Links on mouse-over */
 .sidenav a:hover:not(.active) {
-  background-color: #555;
+  background-color: #bca0bccf;
   color: black;
 }
 
