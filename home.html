@@ -79,10 +79,10 @@
 					}
 
 					// Add active class to the current button (highlight it)
-						var header = document.getElementById("mySidenav");
-						var btns = header.getElementsByClassName("active");
-						for (var i = 0; i < btns.length; i++) {
-						  btns[i].addEventListener("click", function() {
+						var mItemContainer = document.getElementById("mySidenav");
+						var mn = mItemContainer.getElementsByClassName("menuItem");
+						for (var i = 0; i < mn.length; i++) {
+						  mn[i].addEventListener("click", function() {
 						  var current = document.getElementsByClassName("active");
 						  if (current.length > 0) { 
 						    current[0].className = current[0].className.replace(" active", "");
@@ -194,9 +194,10 @@
 
 			      <section class="element">
 			        
-			        <h3 href="qian_feng@sfu.ca" id="emailLexi">qian_feng@sfu.ca</h3>
+			        <h3><a href="mailto:qian_feng@sfu.ca" id="emailLexi">qian_feng@sfu.ca</a></h3>
 			        <h3>778-636-0928</h3>
 			      </section>
+			  </section>
 
     
     
@@ -218,10 +219,10 @@
 				</div>  <!-- for main content being pushed -->
 		</div>  <!-- for col-20 -->
 	<footer class="indexfooter">
-		<a id="inText" href="style_guide.html">Style Guide</a>
-    </footer>
+		<a id="inText" href="style_guide.html">Style Guide</a><br>
+        <script src="js/myFooter.js"></script> </footer>
 
-    <script src="js/myFooter.js"></script> 
+
 
   </body>
 </html>

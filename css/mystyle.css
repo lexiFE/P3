@@ -108,15 +108,30 @@ section{
   text-decoration: line-through #f9ecf9;
 }
 
-.menuItem:active{
-  background-color: #f9ecf6;
-  color: red;
-}
-
 /* Links on mouse-over */
 .menuItem:hover:not(.active) {
-  background-color: #bca0bccf;
+  background-color: #4d4d4d;
   color: black;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.dotStyle{
+	text-align:center;
 }
 
 /* Position and style the close button (top right corner) */
@@ -128,9 +143,6 @@ section{
   margin-left: 50px;
 }
 
-.dotStyle{
-	text-align:center;
-}
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
@@ -204,22 +216,6 @@ section{
   bottom: 0; right: 0;
 }
 
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
@@ -265,6 +261,7 @@ section{
 
 #emailLexi{
 	text-decoration: underline;
+	color: inherit;   /*inherit the style from the h3 element */
 }
 
 /* Styling for the button */
@@ -281,21 +278,6 @@ section{
 .button-nav:hover, .button-nav:focus {
   background-color: rgb(200,200,200);
 }
-
-
-/*  4.changing styling to the image
-*/
-/*.imageChange{
-  display: inline-block;
-  padding: 0.5rem;
-  color: white;
-  background-color: rgb(50,50,50);
-  text-decoration: none;
-  transition-property: background-color;
-  transition-duration: 0.5s;
-}
-*/
-
 
 /* Container needed to position the overlay. Adjust the width as needed */
 .container {
