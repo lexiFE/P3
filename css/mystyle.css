@@ -264,6 +264,66 @@ section{
 	color: inherit;   /*inherit the style from the h3 element */
 }
 
+
+/*------------------------work styling----------------------------*/
+.wrapper {
+  display: flex;  
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+}
+
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.hder {
+  background: tomato;
+}
+
+.fter {
+  background: lightgreen;
+}
+
+.ov {
+  text-align: left;
+  background: deepskyblue;
+}
+
+.aside-1 {
+  background: gold;
+}
+
+.aside-2 {
+  background: hotpink;
+}
+
+@media all and (min-width: 600px) {
+  .aside { flex: 1 0 0; }
+}
+
+@media all and (min-width: 800px) {
+  .ov    { flex: 3 0px; }
+  .aside-1 { order: 1; } 
+  .ov    { order: 2; }
+  .aside-2 { order: 3; }
+  .fter  { order: 4; }
+}
+
+body {
+  padding: 2em; 
+}
+
+
+
+
+
+
+
+
+
+
 /* Styling for the button */
 .button-nav {
   display: inline-block;
