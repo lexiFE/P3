@@ -10,174 +10,205 @@
   </head>
 
   <body>
-    <header>
-      <h1>@Lexi Feng</h1></header>
+    <header >
+      <h1 >@Lexi Feng</h1></header>
+          <!-------------------------- NAV STARTS// ------------------------------->
+    	<div class="col-20">
+			<div id="mySidenav" class="sidenav">
+				  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				  <a href="#about">About</a>
+				  <a href="#works">Services</a>
+				  <a href="#contact">Contact</a>
+				</div>
 
-      <!-- Slideshow container from W3C -->
-		<div class="gallery-container">
+				<!-- Use any element to open the sidenav -->
+				<span onclick="openNav()">MENU</span>
 
-		  <!-- Full-width images with number and caption text -->
-		  <div class="myShow fade">
-		    <div class="numbertext">1 / 3</div>
-		    <img src="img/spread1.jpg" style="width:100%">
-		    <div class="text">Spread Cover</div>
-		  </div>
+				<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+				<div id="main">
+				  
+				  <!-- Slideshow container from W3C -->
+			      <div class="col-80"> 
+					<div class="gallery-container">
 
-		  <div class="myShow fade">
-		    <div class="numbertext">2 / 3</div>
-		    <img src="img/spread2.jpg" style="width:100%">
-		    <div class="text">Second Page</div>
-		  </div>
+					  <!-- Full-width images with number and caption text -->
+					  <div class="myShow fade">
+					    <div class="numbertext">1 / 3</div>
+					    <img src="img/spread1.jpg" style="width:100%">
+					    <div class="text">Spread Cover</div>
+					  </div>
 
-		  <div class="myShow fade">
-		    <div class="numbertext">3 / 3</div>
-		    <img src="img/spread3.jpg" style="width:100%">
-		    <div class="text">Last page</div>
-		  </div>
+					  <div class="myShow fade">
+					    <div class="numbertext">2 / 3</div>
+					    <img src="img/spread2.jpg" style="width:100%">
+					    <div class="text">Second Page</div>
+					  </div>
 
-<!-- 		  <div class="myShow fade">
-		    <div class="numbertext">4 / 4</div>
-		    <img src="img/render1.jpg" style="width:100%">
-		    <div class="text">Last page</div>
-		  </div> -->
+					  <div class="myShow fade">
+					    <div class="numbertext">3 / 3</div>
+					    <img src="img/spread3.jpg" style="width:100%">
+					    <div class="text">Last page</div>
+					  </div>
+			      
+			<!-- 		  <div class="myShow fade">
+					    <div class="numbertext">4 / 4</div>
+					    <img src="img/render1.jpg" style="width:100%">
+					    <div class="text">Last page</div>
+					  </div> -->
 
-		  <!-- Next and previous buttons -->
-		  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-		  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-		</div>
-		<br>
+					  <!-- Next and previous buttons -->
+					  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+					</div>
+					<br>
 
-		<!-- The dots/circles -->
-		<div style="text-align:center">
-		  <span class="dot" onclick="currentSlide(1)"></span> 
-		  <span class="dot" onclick="currentSlide(2)"></span> 
-		  <span class="dot" onclick="currentSlide(3)"></span> 
-		</div>
+					<!-- The dots/circles -->
+					<div style="text-align:center">
+					  <span class="dot" onclick="currentSlide(1)"></span> 
+					  <span class="dot" onclick="currentSlide(2)"></span> 
+					  <span class="dot" onclick="currentSlide(3)"></span> 
+					</div>
 
-		<script src="js/myjs.js"></script> 
+					<script src="js/myjs.js"></script> 
+				  </div>
 
-    <!-------------------------- NAV STARTS// ------------------------------->
-	<nav class="nav-main box">
-        <a class="nav-main-item box-item-nav" href="#about">About</a>   
-        <a class="nav-main-item textEle box-item-nav" href="#works">Works</a>
-        <a class="nav-main-item proListing box-item-nav" href="#contact">Contact</a>
-	</nav>
+      
+					<script>
+					function openNav() {
+					  document.getElementById("mySidenav").style.width = "250px";
+					  document.getElementById("main").style.marginLeft = "250px";
+					}
 
-    <!-------------------------- ABOUT LEXI// ------------------------------->
-    <section id="about">
-      <h2>About and bio</h2>
+					function closeNav() {
+					  document.getElementById("mySidenav").style.width = "0";
+					  document.getElementById("main").style.marginLeft= "0";
+					}
+					</script>
+      
 
-      <div class="box">  <!-- a box model wrapped around with line -->
-        <div class="box-item-inEle">
-        <section class="element">
-          <h3 >Hello! I am Lexi Feng </h3>
+			    <!-------------------------- NAV STARTS// ------------------------------->
+				<!-- <nav class="nav-main box">
+			        <a class="nav-main-item box-item-nav" href="#about">About</a>   
+			        <a class="nav-main-item textEle box-item-nav" href="#works">Works</a>
+			        <a class="nav-main-item proListing box-item-nav" href="#contact">Contact</a>
+				</nav> -->
 
-          <p>I am a designer and photographer based in Vancouver, also a 3rd-year Interactive Arts and Techonology at Simon Fraser University. I am having a great interest in the industrial field of UI/UX design and 3D modelling to continuously develop myself to be innovative yet retrospective.</p>
+			    <!-------------------------- ABOUT LEXI// ------------------------------->
+			    <section id="about">
+			      <h2>About and bio</h2>
 
-          <p>Find Lexi in <a id="inText" href="https://www.facebook.com/lexiqf">here</a></p>
-        </section>
-        </div>  <!-- close box item-inEle -->
+			      <div class="box">  <!-- a box model wrapped around with line -->
+			        <div class="box-item-inEle">
+			        <section class="element">
+			          <h3 >Hello! I am Lexi Feng </h3>
 
-    <!-- // DISPLAYING WORKS SECTION -->
+			          <p>I am a designer and photographer based in Vancouver, also a 3rd-year Interactive Arts and Techonology at Simon Fraser University. I am having a great interest in the industrial field of UI/UX design and 3D modelling to continuously develop myself to be innovative yet retrospective.</p>
 
-    <section id="works">
-      <h2>Works</h2>
+			          <p>Find Lexi in <a id="inText" href="https://www.facebook.com/lexiqf">here</a></p>
+			        </section>
+			        </div>  <!-- close box item-inEle -->
 
-      <section class="element">
-        <div class="box-item-image">
-	        <h3>Image as a Link</h3>
-	          <div class="container">
-	              <img src="img/spread1.jpg" alt="Project 1 SPREAD" class="image">
-	              <div class="overlay">
-	                    <div class="text">Check for more details</div>
-	              </div>  <!-- close "overlay" -->
-	          </div><!-- close container -->
-	    </div><!-- close box-item-image -->
+			    <!-- // DISPLAYING WORKS SECTION -->
 
-	    <div class="container">
-	              <img src="img/render1.jpg" alt="Project 2 ANIMATION" class="image">
-	              <div class="overlay">
-	                    <div class="text">Check for more details</div>
-	              </div>  <!-- close "overlay" -->
-	          </div><!-- close container -->
-        </div><!-- close box-item-image -->
-        
+			    <section id="works">
+			      <h2>Works</h2>
 
-    </section>
+			      <section class="element">
+			        <div class="box-item-image">
+				        <h3>Image as a Link</h3>
+				          <div class="container">
+				              <img src="img/spread1.jpg" alt="Project 1 SPREAD" class="image">
+				              <div class="overlay">
+				                    <div class="text">Check for more details</div>
+				              </div>  <!-- close "overlay" -->
+				          </div><!-- close container -->
+				    </div><!-- close box-item-image -->
+
+				    <div class="container">
+				              <img src="img/render1.jpg" alt="Project 2 ANIMATION" class="image">
+				              <div class="overlay">
+				                    <div class="text">Check for more details</div>
+				              </div>  <!-- close "overlay" -->
+				          </div><!-- close container -->
+			        </div><!-- close box-item-image -->
+			        
+
+			    </section>
 
 
-      <section class="element">
-        <h3>Main Headings</h3>
-        <h4>Subpage tiltle</h4>
-        <h5>Section headings2</h5>
-        <h6>Bold content within body or form labels</h6>
-        <p>Body content /copy</p>
+			      <section class="element">
+			        <h3>Main Headings</h3>
+			        <h4>Subpage tiltle</h4>
+			        <h5>Section headings2</h5>
+			        <h6>Bold content within body or form labels</h6>
+			        <p>Body content /copy</p>
 
-      </section>
+			      </section>
 
-      <section class="element">
-        <div class="container1">
-          <div class="box1">
-          <h3>Project 01 - Spread Design</h3>
-          <p>I was choosing the magazine layout design project to 
-          At the starting point, I carefully read the requirement of the project which is designated to capture a model composed in an architectural space, and together to unite while representing a theme that would be put on a 3-page spread as in a hypothetical magazine. Then with a primary idea in mind, I started a plan to visit the site and seek around the best scenes and camera angle to prepare the real shooting later on. The shooting procedure went well with given instruction to the model to integrate with the shooting scene elements. Therefore, in post-production; I could have plenty of photos for selection.
-          </p>
+			      <section class="element">
+			        <div class="container1">
+			          <div class="box1">
+			          <h3>Project 01 - Spread Design</h3>
+			          <p>I was choosing the magazine layout design project to 
+			          At the starting point, I carefully read the requirement of the project which is designated to capture a model composed in an architectural space, and together to unite while representing a theme that would be put on a 3-page spread as in a hypothetical magazine. Then with a primary idea in mind, I started a plan to visit the site and seek around the best scenes and camera angle to prepare the real shooting later on. The shooting procedure went well with given instruction to the model to integrate with the shooting scene elements. Therefore, in post-production; I could have plenty of photos for selection.
+			          </p>
 
-          <p>By utilizing the digital softwares (Adobe Lightroom 2018, Illustrator 2018) to apply photo treatment on the images into black and white, and adjusted the exposure, sharpness, brightness and many of others, section by section to better optimize the balance of each photo to represent the most out of its theme. I was also inspired by the literal guideline readings and layout collection “Harper’s Bazaar” according to the famous art director Alexey Brodovitch. “Design is an iterative process” always remind me there are lots of diverse methods to play around the possibilities and arrange.</p>
-        </div>
+			          <p>By utilizing the digital softwares (Adobe Lightroom 2018, Illustrator 2018) to apply photo treatment on the images into black and white, and adjusted the exposure, sharpness, brightness and many of others, section by section to better optimize the balance of each photo to represent the most out of its theme. I was also inspired by the literal guideline readings and layout collection “Harper’s Bazaar” according to the famous art director Alexey Brodovitch. “Design is an iterative process” always remind me there are lots of diverse methods to play around the possibilities and arrange.</p>
+			        </div>
 
-        <div class="box2">
-          <h3>Animation:</h3>
-          <p>Before the animation process began, the team and I would set up a few meetings to propose the settings, character and the plot for each scene, in our self-developed creative animation project. In order to construct a fluent and comprehensive story to the audience, we thought about the doability of shaping our own made characters and the feasibility of the animated functions to the team. Later on, each student is allowed to use the the second individual assignment whose requirement is to realistic, in their later group project’s use. I considered this as an opportunity to start the project ahead and it is beneficial not only to myself but also for the team as well. Therefore, I built the cafe scene in 3 dimensional from scratch.  
-          </p>
-        </div>
-      </div>
+			        <div class="box2">
+			          <h3>Animation:</h3>
+			          <p>Before the animation process began, the team and I would set up a few meetings to propose the settings, character and the plot for each scene, in our self-developed creative animation project. In order to construct a fluent and comprehensive story to the audience, we thought about the doability of shaping our own made characters and the feasibility of the animated functions to the team. Later on, each student is allowed to use the the second individual assignment whose requirement is to realistic, in their later group project’s use. I considered this as an opportunity to start the project ahead and it is beneficial not only to myself but also for the team as well. Therefore, I built the cafe scene in 3 dimensional from scratch.  
+			          </p>
+			        </div>
+			      </div>
 
-      </section>
+			      </section>
 
-      <section class="element">
-        <h3>Project-Magazine Spread Design</h3>
-        <ol>
-          <li><strong>Animal Classification</strong></li>
-          <li><strong>Domestication and tame</strong></li>
-          <li><strong>Number three</strong></li>
+			      <section class="element">
+			        <h3>Project-Magazine Spread Design</h3>
+			        <ol>
+			          <li><strong>Animal Classification</strong></li>
+			          <li><strong>Domestication and tame</strong></li>
+			          <li><strong>Number three</strong></li>
 
-        <p>This portfolio should be used to demonstrate that I am a junior designer but having a great interest in the industrial field to continuously develop myself. Innovative while being </p>
+			        <p>This portfolio should be used to demonstrate that I am a junior designer but having a great interest in the industrial field to continuously develop myself. Innovative while being </p>
 
-      </ol>
-      </section>
+			      </ol>
+			      </section>
 
-    </section>
-    <!-- // END OF works SECTION -->
+			    </section>
+			    <!-- // END OF works SECTION -->
 
-    <!-- CONTACT SECTION // -->
-    <section id="contact">
-      <h2>Contact</h2>
+			    <!-- CONTACT SECTION // -->
+			    <section id="contact">
+			      <h2>Contact</h2>
 
-      <section class="element">
-        <h3 id="product_listing">Contact Lexi</h3>
-        <p>qian_feng@sfu.ca</p>
-        <p>778-636-0928</p>
-      </section>
+			      <section class="element">
+			        <h3 id="product_listing">Contact Lexi</h3>
+			        <p>qian_feng@sfu.ca</p>
+			        <p>778-636-0928</p>
+			      </section>
 
     
     
-    <!-- // END of CONTACT SECTION -->
+				    <!-- // END of CONTACT SECTION -->
 
-    <section class="element">
-      <h3>Color Palette</h3>
-      <a class="selectColor" href="#" onclick="this.focus()">
-      <img id="imgColor" alt="image_not" src="img/color_palatte.png" />
-      </a>
-    </section>
+				  <section class="element">
+				      <h3>Color Palette</h3>
+				      <a class="selectColor" href="#" onclick="this.focus()">
+				      <img id="imgColor" alt="image_not" src="img/color_palatte.png" />
+				      </a>
+				  </section>
 
 
-      <section class="element">
-        <h3>Submit/Reset Buttons</h3>
-        <a class="button-nav" href="#">Submit</a>
-        <a class="button-nav" href="#">Reset</a>
-      </section>
-
+			      <section class="element">
+			        <h3>Submit/Reset Buttons</h3>
+			        <a class="button-nav" href="#">Submit</a>
+			        <a class="button-nav" href="#">Reset</a>
+			      </section>
+				</div>  <!-- for main content being pushed -->
+		</div>  <!-- for col-20 -->
 	<footer class="indexfooter">
     </footer>
 
