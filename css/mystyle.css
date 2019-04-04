@@ -324,10 +324,10 @@ section{
   	animation: float 4s ease-in-out infinite;
 }
 .brand img {
-	margin-left: 28%;
-  width: 44%;
+	margin-left: 30%;
+  width: 40%;
   height: auto;
-  margin-right: 28%;
+  margin-right: 30%;
 }
 .circle:hover
 {
