@@ -72,7 +72,12 @@ nav a:hover, nav a:focus {
   .nav-main a { 
     border-bottom: none;
   }
-}/* --------- finishing nav styling --------------*/
+
+  #navbar a{
+  	text-align: center;
+  	float: none;
+  }
+}/* --------- Media Queries  finishing nav styling --------------*/
 
 
 .element {
@@ -249,13 +254,13 @@ section{
   display: inline-block;
   padding: 0.5rem;
   color: white;
-  background-color: #7AA7CF;
+  background-color: #365066;
   text-decoration: none;
   transition-property: background-color;
   transition-duration: 0.5s;
 }
 #inText:hover, #inText:focus{
-  background-color: #365066;
+  background-color: #7AA7CF;
   text-decoration-color: #EFEEEA;
 }
 
