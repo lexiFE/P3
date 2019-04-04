@@ -311,7 +311,21 @@ section{
 	color: inherit;   /*inherit the style from the h3 element */
 }
 
-
+.circle {
+  border-radius: 50%;
+}
+.brand img {
+	margin-left: 28%;
+  width: 44%;
+  height: auto;
+  margin-right: 28%;
+}
+.circle:hover
+{
+        -webkit-transform: rotateZ(-10deg);
+        -ms-transform: rotateZ(-10deg);
+        transform: rotateZ(-10deg);
+}
 /*------------------------work styling----------------------------*/
 .wrapper {
   display: flex;  
@@ -374,6 +388,7 @@ section{
   justify-content: center;
   transition-property: background-color;
   transition-duration: 0.5s;
+  margin: 2rem;
 }
 
 .button-nav:hover, .button-nav:focus {
