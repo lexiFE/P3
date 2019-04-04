@@ -1,9 +1,11 @@
 *,*::after,*::before{    /**is selecting everything. This allows us to apply the border-box model to all elements on the page.*/
 	box-sizing: border-box;
+
 }
 body {
   font-family: Verdana, Geneva, sans-serif; 
-  padding: 2rem;
+      margin: 0;
+    padding: 0;
 }
 
 h2 {
@@ -37,16 +39,25 @@ nav a:hover, nav a:focus {
   text-decoration:underline; ;
 }
 
+.Showtext{
+	text-align: center;
+}
+
 .box-item-inEle{
 	margin-left: 24%;
-width: 52%;
-margin-right: 24%;
+	width: 52%;
+	margin-right: 24%;
 }
 
 .indexfooter {
 	background-color: black;
 	color: white;
 	text-align: center;
+	padding: 2rem;
+}
+
+.indexfooter a:hover{
+	text-decoration: underline;
 }
 @media all and (max-width: 750px) {    /*medium scree, center the menu item with even space*/
   .nav-main {
@@ -93,6 +104,11 @@ margin-right: 24%;
   	text-align: center;
   	float: none;
   }
+
+  .cardContainer {
+	display: block;
+	flex-wrap: wrap;
+}
 }/* --------- Media Queries  finishing nav styling --------------*/
 
 
@@ -101,6 +117,7 @@ margin-right: 24%;
   border-top-width: 0.15rem;
   border-top-style: solid;
   border-top-color: black;
+  text-align: center;
 }
 
 /*2. adding space between sections*/
@@ -301,6 +318,9 @@ section{
   flex-flow: row wrap;
   font-weight: bold;
   text-align: left;
+  margin-left: 24%;
+	width: 52%;
+	margin-right: 24%;
 }
 
 .wrapper > * {
@@ -309,22 +329,17 @@ section{
 }
 
 .hder {
-  background: tomato;
+  background-image: linear-gradient(to left, #e6e6e6,#808080);
   text-align: center;
 }
 
 .ov {
   text-align: left;
-  background: deepskyblue;
+  background: #f2f2f2;
+  display: block;
+  flex-wrap: wrap;
 }
 
-.aside-1 {
-  background: gold;
-}
-
-.aside-2 {
-  background: hotpink;
-}
 
 @media all and (min-width: 600px) {
   .aside { flex: 1 0 0; }
@@ -332,9 +347,6 @@ section{
   .proImg{flex: 3 0 0;}
 }
 
-body {
-  padding: 2em; 
-}
 
 
 
@@ -349,6 +361,7 @@ body {
 .btnPj, .a2a_kit{
 	display: flex;
 	justify-content: center;
+	margin-bottom: 1rem;
 }
 
 
@@ -380,6 +393,11 @@ body {
   z-index: -1;
 }
 
+.imageProject{
+	  width: 100%;
+  height: auto;
+  z-index: -1;
+}
 
 /*
   TEXT ELEMENTS -------------------
@@ -413,7 +431,7 @@ body {
   display: flex;
 
 
-  background-color: #333;
+  background-image: linear-gradient(to right, #4d4d4d, #d9d9d9);
 }
 
 /* Navbar links */
@@ -453,6 +471,7 @@ body {
 .quickView {
 	flex: 1;
 	margin-left: 6rem;
+	min-width: 300px;
 }
 
 
