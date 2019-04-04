@@ -40,12 +40,21 @@ nav a:hover, nav a:focus {
   .nav-main {
     justify-content: space-around;
   }
+  .sidenav {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidenav a {float: left;}
+  div.main {margin-left: 0;}
 }
 
 @media all and (max-width: 400px) {
 	.sidenav a{
+		font-size: 0.4rem;
 		text-align: center;
 		float: none;
+
 	}
   .nav-main {
     -webkit-flex-flow: column wrap;
@@ -137,7 +146,7 @@ section{
 /* Position and style the close button (top right corner) */
 .sidenav .closebtn {
   position: absolute;
-  top: 15%;
+  top: 25%;
   right: 25px;
   font-size: 2.1rem;
   margin-left: 50px;
@@ -354,6 +363,7 @@ body {
 .image {
   width: 100%;
   height: auto;
+  z-index: -1;
 }
 
 /* The overlay effect (full height and width) - lays on top of the container and over the image */
@@ -461,3 +471,44 @@ height:400px;
   padding: 5px 15px;
   font-size: 24px;
 }
+
+
+
+
+/* Style the navbar */
+#navbar {
+	z-index: : 5;
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Navbar links */
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+
+
+
+

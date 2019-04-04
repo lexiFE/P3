@@ -20,10 +20,37 @@
 				  <a href="#works" class="menuItem">Works</a>
 				  <a href="#contact" class="menuItem">Contact</a>
 				</div>
+				<div id="navbar">
+				  <a href="index.html">Home</a>
+				  <a href="#about">About</a>
+				  <a href="#work">Work</a>
+				  <a href="#contact">Contact</a>
+				</div>
+
+
+				<script>
+				window.onscroll = function() {myFunction()};
+
+				var navbar = document.getElementById("navbar");
+				var sticky = navbar.offsetTop;
+
+				function myFunction() {
+				  if (window.pageYOffset >= sticky) {
+				    navbar.classList.add("sticky")
+				  } else {
+				    navbar.classList.remove("sticky");
+				  }
+				}
+				</script>
 
 				<!-- Use any element to open the sidenav -->
 				<span onclick="openNav()">&#9776menu</span>
-				
+
+
+
+
+
+
 				<div id="main">
 				  
 				  <!-- Slideshow container from W3C -->
@@ -142,24 +169,7 @@
 					  <aside class="aside aside-2">Aside 2</aside>
 				  </div>
 
-			      <section class="element">
-			        <div class="box-item-image">
-				        <h3>Image as a Link</h3>
-				          <div class="container">
-				              <img src="img/spread1.jpg" alt="Project 1 SPREAD" class="image">
-				              <div class="overlay">
-				                    <div class="text">Check for more details</div>
-				              </div>  <!-- close "overlay" -->
-				          </div><!-- close container -->
 
-				    	  <div class="container">
-				              <img src="img/render1.jpg" alt="Project 2 ANIMATION" class="image">
-				              <div class="overlay">
-				                    <div class="text">Check for more details</div>
-				              </div>  <!-- close "overlay" -->
-				    	   </div><!-- close container -->
-			        </div><!-- close box-item-image -->
-			    </section>
 
 
 			      <section class="element">
