@@ -40,6 +40,10 @@ nav a:hover, nav a:focus {
 
 .Showtext{
 	text-align: center;
+	font-size: 0.77rem;
+	font-weight: normal;
+	text-decoration: underline;
+	margin-bottom: 6rem;
 }
 
 .box-item-inEle{
@@ -317,6 +321,7 @@ section{
 
 .circle {
   border-radius: 50%;
+  	animation: float 4s ease-in-out infinite;
 }
 .brand img {
 	margin-left: 28%;
@@ -329,6 +334,22 @@ section{
         -webkit-transform: rotateZ(-10deg);
         -ms-transform: rotateZ(-10deg);
         transform: rotateZ(-10deg);
+}
+
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 10px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 68px 10px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 10px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
 }
 /*------------------------work styling----------------------------*/
 .wrapper {
