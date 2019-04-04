@@ -350,8 +350,9 @@ section{
 	margin-left: 2em;
 }
 
-.wrapper h3:hover, h2:hover{
+.wrapper article:hover, h2:hover{
 	  text-decoration: line-through dashed #595959;
+	  background: linear-gradient(65deg, rgba(230, 222, 220, 1) 0%, rgba(175, 191, 190, 1) 100%);
 }
 
 .hder {
