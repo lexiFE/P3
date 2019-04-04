@@ -270,7 +270,7 @@ section{
   display: flex;  
   flex-flow: row wrap;
   font-weight: bold;
-  text-align: center;
+  text-align: left;
 }
 
 .wrapper > * {
@@ -280,10 +280,7 @@ section{
 
 .hder {
   background: tomato;
-}
-
-.fter {
-  background: lightgreen;
+  text-align: center;
 }
 
 .ov {
@@ -301,15 +298,17 @@ section{
 
 @media all and (min-width: 600px) {
   .aside { flex: 1 0 0; }
+  /*make 2 process imgs in a same row*/
+  .proImg{flex: 3 0 0;}
 }
 
-@media all and (min-width: 800px) {
+/*@media all and (min-width: 800px) {
   .ov    { flex: 3 0px; }
   .aside-1 { order: 1; } 
   .ov    { order: 2; }
   .aside-2 { order: 3; }
   .fter  { order: 4; }
-}
+}*/
 
 body {
   padding: 2em; 
@@ -325,12 +324,18 @@ body {
 
 
 /* Styling for the button */
+.btnPj{
+	display: flex;
+	justify-content: center;
+}
+
 .button-nav {
   display: inline-block;
   padding: 0.5rem;
   color: white;
   background-color: rgb(50,50,50);
   text-decoration: none;
+  justify-content: center;
   transition-property: background-color;
   transition-duration: 0.5s;
 }
@@ -397,24 +402,6 @@ height:400px;
 
 .selectColor:focus img{
     border: 2px solid blue;
-}
-
-fieldset{
-  margin-top: 2em;
-  margin-bottom: 2em;
-  display: inline-block;
-}
-input:focus {
-    opacity: 0;
-}
-label{
-  margin: 2em;
-  display: inline-block;
-}
-
-label:hover {
-  background-color: rgb(135,230,9);
-
 }
 
 
